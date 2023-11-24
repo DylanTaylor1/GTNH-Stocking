@@ -40,7 +40,9 @@ Lastly, you will need adapters to connect the level-maintainers and buffer chest
 Once complete, it should look something like this. The exact locations of everything are not important so long as the computer can access everything via adapters.
 
 # Running the Programs
-The first thing you will want to do is edit the stockList based on what you would like to request and how many level-maintainers you have available. This can be done in-game by typing edit stockList.lua or out of game in your favorite IDE (VSCode). If you would like to copy and paste a lot of changes all at once, it may be helpful to simply remove the old stockList by typing rm stockList.lua before creating a brand new file by typing edit stockList.lua (middle-click to paste). It is not necessary to delete lines that you do not want: simply comment them out by typing '--' before the entry. For most IDE, you can comment/uncomment many lines at once by pressing 'ctrl' + '/' together. Changing anything in stockList requires restarting the computer.
+The first thing you will want to do is edit the stockList based on what you would like to request and how many level-maintainers you have available. This can be done in-game by typing edit stockList.lua or out of game in your favorite IDE (VSCode). If you would like to copy and paste a lot of changes all at once, it may be helpful to simply remove the old stockList by typing rm stockList.lua before creating a brand new file by typing edit stockList.lua (middle-click to paste). You will likely need to copy everything over in 2 batches since the file (by default) is too long for a single copy-paste.
+
+It is not necessary to delete lines that you do not want (simply comment them out by typing '--' before the entry). For most IDE, you can comment/uncomment many lines at once by pressing 'ctrl' + '/' together. Changing anything in stockList requires restarting the computer.
 
         edit stockList.lua
 

@@ -18,7 +18,6 @@ local stockList = {
 	-- {min=32, batch=8, label='Large Ingredient Buffer', name='ae2fc:large_ingredient_buffer', damage=0},
 	-- {min=32, batch=8, label='Output Bus (ME)', name='gregtech:gt.blockmachines', damage=2710},
 	-- {min=32, batch=8, label='Output Hatch (ME)', name='gregtech:gt.blockmachines', damage=2713},
-	-- {min=32, batch=8, label='Crafting Input Slave', name='gregtech:gt.blockmachines', damage=2716},
 	-- {min=32, batch=8, label='Stocking Input Bus (ME)', name='gregtech:gt.blockmachines', damage=2711},
 	-- {min=32, batch=8, label='Crafting Input Bus (ME)', name='gregtech:gt.blockmachines', damage=2715},
 	-- {min=32, batch=8, label='Crafting Input Buffer (ME)', name='gregtech:gt.blockmachines', damage=2714},
@@ -50,7 +49,7 @@ local stockList = {
 	-- {min=64, batch=16, label='Input Hatch (HV)', name='gregtech:gt.blockmachines', damage=53},
 	-- {min=64, batch=16, label='Output Hatch (HV)', name='gregtech:gt.blockmachines', damage=63},
 	-- {min=64, batch=16, label='Muffler Hatch (LV)', name='gregtech:gt.blockmachines', damage=91},
-	-- {min=64, batch=16, label='Maintenance Hatch', name='gregtech:gt.blockmachines', damage=91},
+	-- {min=64, batch=16, label='Maintenance Hatch', name='gregtech:gt.blockmachines', damage=90},
 	-- {min=64, batch=16, label='BrainTech Aerospace Advanced Reinforced Duct Tape FAL-84', name='gregtech:gt.metaitem.01', damage=32764},
 	-- {min=64, batch=16, label='Auto Maintenance Hatch', name='gregtech:gt.blockmachines', damage=111},
 	-- {min=64, batch=16, label='Auto-Taping Maintenance Hatch', name='gregtech:gt.blockmachines', damage=15497},
@@ -58,7 +57,7 @@ local stockList = {
 	-- {min=32, batch=8, label='Electric Blast Furnace', name='gregtech:gt.blockmachines', damage=1000},
 	-- {min=32, batch=8, label='Large Chemical Reactor', name='gregtech:gt.blockmachines', damage=1169},
 	-- {min=32, batch=8, label='Distillation Tower', name='gregtech:gt.blockmachines', damage=1126},
-	-- {min=32, batch=8, label='Dangote Distillus', name='gregtech:gt.blockmachines', damage=1126},
+	-- {min=32, batch=8, label='Dangote Distillus', name='gregtech:gt.blockmachines', damage=31021},
 	-- {min=32, batch=8, label='Industrial Centrifuge', name='gregtech:gt.blockmachines', damage=790},
 	-- {min=32, batch=8, label='Industrial Electrolyzer', name='gregtech:gt.blockmachines', damage=796},
 	-- {min=32, batch=8, label='Industrial Mixing Machine', name='gregtech:gt.blockmachines', damage=811},
@@ -114,12 +113,12 @@ local stockList = {
 	-- {min=4096, batch=256, label='Stainless Steel Ingot', name='gregtech:gt.metaitem.01', damage=11306},
 	-- {min=4096, batch=256, label='Titanium Ingot', name='gregtech:gt.metaitem.01', damage=11028},
 	-- {min=4096, batch=256, label='Tungstensteel Ingot', name='gregtech:gt.metaitem.01', damage=11316},
-	-- {min=4096, batch=256, label='Rhodium-Plated Palladium Ingot', name='bartworks:gt.MetaGeneratedingot', damage=88},
+	-- {min=4096, batch=256, label='Rhodium-Plated Palladium Ingot', name='bartworks:gt.bwMetaGeneratedingot', damage=88},
 	-- {min=4096, batch=256, label='Iridium Ingot', name='gregtech:gt.metaitem.01', damage=11084},
 	-- {min=4096, batch=256, label='Osmium Ingot', name='gregtech:gt.metaitem.01', damage=11083},
-	-- {min=4096, batch=256, label='Neutronium Ingot', name='gregtech:gt.metaitem.01', damage=11083},
-	-- {min=4096, batch=256, label='Bedrockium Ingot', name='gregtech:gt.metaitem.01', damage=11083},
-	-- {min=4096, batch=256, label='Black Plutonium Ingot', name='gregtech:gt.metaitem.01', damage=11083},
+	-- {min=4096, batch=256, label='Neutronium Ingot', name='gregtech:gt.metaitem.01', damage=11129},
+	-- {min=4096, batch=256, label='Bedrockium Ingot', name='gregtech:gt.metaitem.01', damage=11395},
+	-- {min=4096, batch=256, label='Black Plutonium Ingot', name='gregtech:gt.metaitem.01', damage=11388},
 
 	-- {min=4096, batch=256, label='Neodymium Ingot', name='gregtech:gt.metaitem.01', damage=11067},
 	-- {min=4096, batch=256, label='Samarium Ingot', name='gregtech:gt.metaitem.01', damage=11069},
@@ -150,6 +149,7 @@ local stockList = {
 	-- {min=4096, batch=256, label='Silicon Solar Grade (Poly SI) Ingot', name='gregtech:gt.metaitem.01', damage=11856},
 	-- {min=4096, batch=256, label='Draconium Ingot', name='gregtech:gt.metaitem.01', damage=11975},
 	-- {min=4096, batch=256, label='Signalium Ingot', name='bartworks:gt.bwMetaGeneratedingot', damage=10099},
+	-- {min=4096, batch=256, label='Cosmic Neutronium Ingot', name='Avaritia:Resource', damage=4},
 	-- {min=4096, batch=256, label='Infinity Ingot', name='Avaritia:Resource', damage=6},
 
 	-- ======================== MOTORS ========================
@@ -239,9 +239,9 @@ local stockList = {
 	-- {min=256, batch=64, label='Quantumprocessor (EV)', name='gregtech:gt.metaitem.03', damage=32085},
 
 	-- {min=256, batch=64, label='Crystalprocessor (IV)', name='gregtech:gt.metaitem.03', damage=32089},
-	-- {min=256, batch=64, label='Ultimate Crystalcomputer (LuV)', name='gregtech:gt.metaitem.03', damage=32090},
-	-- {min=256, batch=64, label='Crystalprocessor Mainframe (ZPM)', name='gregtech:gt.metaitem.03', damage=32091},
-	-- {min=256, batch=64, label='Crystalprocessor Assembly (UV)', name='gregtech:gt.metaitem.03', damage=32096},
+	-- {min=256, batch=64, label='Ultimate Crystalcomputer (LuV)', name='gregtech:gt.metaitem.03', damage=32096},
+	-- {min=256, batch=64, label='Crystalprocessor Mainframe (ZPM)', name='gregtech:gt.metaitem.03', damage=32090},
+	-- {min=256, batch=64, label='Crystalprocessor Assembly (UV)', name='gregtech:gt.metaitem.03', damage=32091},
 
 	-- {min=256, batch=64, label='Wetwareprocessor (LuV)', name='gregtech:gt.metaitem.03', damage=32092},
 	-- {min=256, batch=64, label='Wetwareprocessor Assembly (ZPM)', name='gregtech:gt.metaitem.03', damage=32093},
@@ -262,7 +262,7 @@ local stockList = {
 	-- {min=256, batch=64, label='Pico Circuit (UMV)', name='dreamcraft:item.PikoCircuit', damage=0},
 	-- {min=256, batch=64, label='Quantum Circuit (UXV)', name='dreamcraft:item.QuantumCircuit', damage=0},
 
-	-- ==================== CIRCUIT PARTS =====================
+	-- ======================= WAFERS =========================
 	-- {min=1024, batch=256, label='Wafer', name='gregtech:gt.metaitem.03', damage=32033},
 	-- {min=1024, batch=256, label='Phosphorous Doped Wafer', name='gregtech:gt.metaitem.03', damage=32034},
 	-- {min=1024, batch=256, label='Naquadah Doped Wafer', name='gregtech:gt.metaitem.03', damage=32035},
