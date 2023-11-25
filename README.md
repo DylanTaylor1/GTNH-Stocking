@@ -1,5 +1,5 @@
 # Introduction
-These Open Computers (OC) scripts will automatically set all available AE2 level-maintainers based on your requests in stockList. Saving all information to an external file eliminates the volatility of level-maintainers. No longer will you have to reconfigure them every single time you move. This also makes it incredibly easy to share with other people or across worlds.
+These Open Computers (OC) scripts will automatically set all available AE2 level-maintainers based on your requests in a file called stockList. The purpose of saving all information to an external file is to eliminate the volatility of level-maintainers. That is, they lose all of their information upon breaking which makes them incredibly annoying to move. An external file is also incredibly easy to share with other people or across worlds.
 
 # Bare Minimum Components
 Obtaining these components will require access to EV circuits and epoxid (late HV). This is because you need an internet card to pull the scripts from GitHub (it is possible to create all the files manually and then copy and paste the code from GitHub, but that is not recommended). 
@@ -21,7 +21,7 @@ The tier of CPU or APU influences how many components (and therefore level-maint
 
 ![Computer Components](media/Comp_Components.png?)
 
-Lastly, you will need adapters to connect the level-maintainers and buffer chest to your computer. How many depends on how many level-maintainers you want to connect (see below).
+Lastly, you will need adapters to connect the level-maintainers and buffer chest to your computer. How many depends on how many level-maintainers you want (see below).
 
 # Building
 1. Place the computer case down and power it using any GT cable. Place the keyboard on top and the screen behind it. The screen will need to be connected with a single cable in the back.
@@ -40,7 +40,7 @@ Lastly, you will need adapters to connect the level-maintainers and buffer chest
 Once complete, it should look something like this. The exact locations of everything are not important so long as the computer can access everything via adapters.
 
 # Running the Programs
-The first thing you will want to do is edit the stockList based on what you would like to request and how many level-maintainers you have available. This can be done in-game by typing edit stockList.lua or out of game in your favorite IDE (VSCode). If you would like to copy and paste a lot of changes all at once, it may be helpful to simply remove the old stockList by typing rm stockList.lua before creating a brand new file by typing edit stockList.lua (middle-click to paste). You will likely need to copy everything over in 2 batches since the file (by default) is too long for a single copy-paste.
+The first thing you will want to do is edit the stockList based on what you would like to request and how many level-maintainers you have available. This can be done in-game by typing edit stockList.lua or out of game in your favorite IDE (VSCode). If you would like to copy and paste a lot of changes all at once, it may be helpful to simply remove the old stockList by typing rm stockList.lua before creating a brand new file by again typing edit stockList.lua (middle-click to paste). You will likely need to copy everything over in 2 batches since the file (by default) is too long for a single copy-paste.
 
 It is not necessary to delete lines that you do not want (simply comment them out by typing '--' before the entry). For most IDE, you can comment/uncomment many lines at once by pressing 'ctrl' + '/' together. Changing anything in stockList requires restarting the computer.
 
