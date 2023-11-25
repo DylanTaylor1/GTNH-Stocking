@@ -44,7 +44,9 @@ local stockList = {
 	-- {min=256, batch=64, label='Infinity Fluid Pipe', name='gregtech:gt.blockmachines', damage=5252},
 
 	-- ===================== MULTIBLOCKS ======================
+	-- {min=64, batch=16, label='Input Bus (ULV)', name='gregtech:gt.blockmachines', damage=70},
 	-- {min=64, batch=16, label='Input Bus (HV)', name='gregtech:gt.blockmachines', damage=73},
+	-- {min=64, batch=16, label='Output Bus (ULV)', name='gregtech:gt.blockmachines', damage=80},
 	-- {min=64, batch=16, label='Output Bus (HV)', name='gregtech:gt.blockmachines', damage=83},
 	-- {min=64, batch=16, label='Input Hatch (HV)', name='gregtech:gt.blockmachines', damage=53},
 	-- {min=64, batch=16, label='Output Hatch (HV)', name='gregtech:gt.blockmachines', damage=63},
@@ -53,6 +55,29 @@ local stockList = {
 	-- {min=64, batch=16, label='BrainTech Aerospace Advanced Reinforced Duct Tape FAL-84', name='gregtech:gt.metaitem.01', damage=32764},
 	-- {min=64, batch=16, label='Auto Maintenance Hatch', name='gregtech:gt.blockmachines', damage=111},
 	-- {min=64, batch=16, label='Auto-Taping Maintenance Hatch', name='gregtech:gt.blockmachines', damage=15497},
+
+	-- {min=64, batch=16, label='EV Energy Hatch', name='gregtech:gt.blockmachines', damage=44},
+	-- {min=64, batch=16, label='IV Energy Hatch', name='gregtech:gt.blockmachines', damage=45},
+	-- {min=64, batch=16, label='LuV Energy Hatch', name='gregtech:gt.blockmachines', damage=46},
+	-- {min=64, batch=16, label='ZPM Energy Hatch', name='gregtech:gt.blockmachines', damage=47},
+	-- {min=64, batch=16, label='UV Energy Hatch', name='gregtech:gt.blockmachines', damage=48},
+	-- {min=64, batch=16, label='UHV Energy Hatch', name='gregtech:gt.blockmachines', damage=49},
+	-- {min=64, batch=16, label='UEV Energy Hatch', name='gregtech:gt.blockmachines', damage=11300},
+	-- {min=64, batch=16, label='UIV Energy Hatch', name='gregtech:gt.blockmachines', damage=11301},
+	-- {min=64, batch=16, label='UMV Energy Hatch', name='gregtech:gt.blockmachines', damage=11302},
+	-- {min=64, batch=16, label='UXV Energy Hatch', name='gregtech:gt.blockmachines', damage=11303},
+
+	-- {min=128, batch=32, label='Reinforced Glass', name='IC2:blockAlloyGlass', damage=0},
+	-- {min=128, batch=32, label='Borosilicate Glass Block (HV)', name='bartworks:BW_GlasBlocks', damage=0},
+	-- {min=128, batch=32, label='Titanium Reinforced Borosilicate Glass Block (EV)', name='bartworks:BW_GlasBlocks', damage=1},
+	-- {min=128, batch=32, label='Tungstensteel Reinforced Borosilicate Glass Block (IV)', name='bartworks:BW_GlasBlocks', damage=2},
+	-- {min=128, batch=32, label='Rhodium-Plated Palladium Borosilicate Glass Block (LuV)', name='bartworks:BW_GlasBlocks', damage=3},
+	-- {min=128, batch=32, label='Iridium Reinforced Borosilicate Glass Block (ZPM)', name='bartworks:BW_GlasBlocks', damage=4},
+	-- {min=128, batch=32, label='Osmium Reinforced Borosilicate Glass Block (UV)', name='bartworks:BW_GlasBlocks', damage=5},
+	-- {min=128, batch=32, label='Neutronium Reinforced Borosilicate Glass Block (UHV)', name='bartworks:BW_GlasBlocks', damage=13},
+	-- {min=128, batch=32, label='Cosmic Neutronium Reinforced Borosilicate Glass Block (UEV)', name='bartworks:BW_GlasBlocks', damage=14},
+	-- {min=128, batch=32, label='Infinity Reinforced Borosilicate Glass Block (UIV)', name='bartworks:BW_GlasBlocks', damage=15},
+	-- {min=128, batch=32, label='Transcendentally Reinforced Borosilicate Glass Block (UMV)', name='bartworks:BW_GlasBlocks2', damage=0},
 
 	-- {min=32, batch=8, label='Electric Blast Furnace', name='gregtech:gt.blockmachines', damage=1000},
 	-- {min=32, batch=8, label='Large Chemical Reactor', name='gregtech:gt.blockmachines', damage=1169},
@@ -152,6 +177,50 @@ local stockList = {
 	-- {min=4096, batch=256, label='Cosmic Neutronium Ingot', name='Avaritia:Resource', damage=4},
 	-- {min=4096, batch=256, label='Infinity Ingot', name='Avaritia:Resource', damage=6},
 
+	-- ======================= CIRCUITS =======================
+	-- {min=256, batch=64, label='Microprocessor (LV)', name='gregtech:gt.metaitem.03', damage=32078},
+	-- {min=256, batch=64, label='Integrated Processor (MV)', name='gregtech:gt.metaitem.03', damage=32080},
+	-- {min=256, batch=64, label='Nanoprocessor (HV)', name='gregtech:gt.metaitem.03', damage=32082},
+	-- {min=256, batch=64, label='Quantumprocessor (EV)', name='gregtech:gt.metaitem.03', damage=32085},
+
+	-- {min=256, batch=64, label='Crystalprocessor (IV)', name='gregtech:gt.metaitem.03', damage=32089},
+	-- {min=256, batch=64, label='Ultimate Crystalcomputer (LuV)', name='gregtech:gt.metaitem.03', damage=32096},
+	-- {min=256, batch=64, label='Crystalprocessor Mainframe (ZPM)', name='gregtech:gt.metaitem.03', damage=32090},
+	-- {min=256, batch=64, label='Crystalprocessor Assembly (UV)', name='gregtech:gt.metaitem.03', damage=32091},
+
+	-- {min=256, batch=64, label='Wetwareprocessor (LuV)', name='gregtech:gt.metaitem.03', damage=32092},
+	-- {min=256, batch=64, label='Wetwareprocessor Assembly (ZPM)', name='gregtech:gt.metaitem.03', damage=32093},
+	-- {min=256, batch=64, label='Wetware Supercomputer (UV)', name='gregtech:gt.metaitem.03', damage=32094},
+	-- {min=256, batch=64, label='Wetware Mainframe (UHV)', name='gregtech:gt.metaitem.03', damage=32095},
+
+	-- {min=256, batch=64, label='Bioprocessor (ZPM)', name='gregtech:gt.metaitem.03', damage=32097},
+	-- {min=256, batch=64, label='Biowareprocessor Assembly (UV)', name='gregtech:gt.metaitem.03', damage=32098},
+	-- {min=256, batch=64, label='Bioware Supercomputer (UHV)', name='gregtech:gt.metaitem.03', damage=32099},
+	-- {min=256, batch=64, label='Bio Mainframe (UEV)', name='gregtech:gt.metaitem.03', damage=32120},
+
+	-- {min=256, batch=64, label='Optical Processor (UV)', name='gregtech:gt.metaitem.03', damage=32154},
+	-- {min=256, batch=64, label='Optical Assembly (UHV)', name='gregtech:gt.metaitem.03', damage=32155},
+	-- {min=256, batch=64, label='Optical Computer (UEV)', name='gregtech:gt.metaitem.03', damage=32156},
+	-- {min=256, batch=64, label='Optical Mainframe (UIV)', name='gregtech:gt.metaitem.03', damage=32157},
+
+	-- {min=256, batch=64, label='Nano Circuit (UIV)', name='dreamcraft:item.NanoCircuit', damage=0},
+	-- {min=256, batch=64, label='Pico Circuit (UMV)', name='dreamcraft:item.PikoCircuit', damage=0},
+	-- {min=256, batch=64, label='Quantum Circuit (UXV)', name='dreamcraft:item.QuantumCircuit', damage=0},
+
+	-- ======================= WAFERS =========================
+	-- {min=1024, batch=256, label='Wafer', name='gregtech:gt.metaitem.03', damage=32033},
+	-- {min=1024, batch=256, label='Phosphorous Doped Wafer', name='gregtech:gt.metaitem.03', damage=32034},
+	-- {min=1024, batch=256, label='Naquadah Doped Wafer', name='gregtech:gt.metaitem.03', damage=32035},
+	-- {min=1024, batch=256, label='Europium Doped Wafer', name='gregtech:gt.metaitem.03', damage=32151},
+	-- {min=1024, batch=256, label='Americium Doped Wafer', name='gregtech:gt.metaitem.03', damage=32153},
+
+	-- {min=512, batch=128, label='PIC Wafer', name='gregtech:gt.metaitem.03', damage=32050},
+	-- {min=512, batch=128, label='HPIC Wafer', name='gregtech:gt.metaitem.03', damage=32052},
+	-- {min=512, batch=128, label='UHPIC Wafer', name='gregtech:gt.metaitem.03', damage=32058},
+	-- {min=256, batch=128, label='NPIC Wafer', name='gregtech:gt.metaitem.03', damage=32160},
+	-- {min=256, batch=128, label='PPIC Wafer', name='gregtech:gt.metaitem.03', damage=32162},
+	-- {min=256, batch=128, label='QPIC Wafer', name='gregtech:gt.metaitem.03', damage=32164},
+
 	-- ======================== MOTORS ========================
 	-- {min=64, batch=16, label='Electric Motor (LV)', name='gregtech:gt.metaitem.01', damage=32600},
 	-- {min=64, batch=16, label='Electric Motor (MV)', name='gregtech:gt.metaitem.01', damage=32601},
@@ -231,50 +300,6 @@ local stockList = {
 	-- {min=64, batch=16, label='Robot Arm (UMV)', name='gregtech:gt.metaitem.01', damage=32034},
 	-- {min=64, batch=16, label='Robot Arm (UXV)', name='gregtech:gt.metaitem.01', damage=32035},
 	-- {min=64, batch=16, label='Robot Arm (MAX)', name='gregtech:gt.metaitem.01', damage=32036},
-
-	-- ======================= CIRCUITS =======================
-	-- {min=256, batch=64, label='Microprocessor (LV)', name='gregtech:gt.metaitem.03', damage=32078},
-	-- {min=256, batch=64, label='Integrated Processor (MV)', name='gregtech:gt.metaitem.03', damage=32080},
-	-- {min=256, batch=64, label='Nanoprocessor (HV)', name='gregtech:gt.metaitem.03', damage=32082},
-	-- {min=256, batch=64, label='Quantumprocessor (EV)', name='gregtech:gt.metaitem.03', damage=32085},
-
-	-- {min=256, batch=64, label='Crystalprocessor (IV)', name='gregtech:gt.metaitem.03', damage=32089},
-	-- {min=256, batch=64, label='Ultimate Crystalcomputer (LuV)', name='gregtech:gt.metaitem.03', damage=32096},
-	-- {min=256, batch=64, label='Crystalprocessor Mainframe (ZPM)', name='gregtech:gt.metaitem.03', damage=32090},
-	-- {min=256, batch=64, label='Crystalprocessor Assembly (UV)', name='gregtech:gt.metaitem.03', damage=32091},
-
-	-- {min=256, batch=64, label='Wetwareprocessor (LuV)', name='gregtech:gt.metaitem.03', damage=32092},
-	-- {min=256, batch=64, label='Wetwareprocessor Assembly (ZPM)', name='gregtech:gt.metaitem.03', damage=32093},
-	-- {min=256, batch=64, label='Wetware Supercomputer (UV)', name='gregtech:gt.metaitem.03', damage=32094},
-	-- {min=256, batch=64, label='Wetware Mainframe (UHV)', name='gregtech:gt.metaitem.03', damage=32095},
-
-	-- {min=256, batch=64, label='Bioprocessor (ZPM)', name='gregtech:gt.metaitem.03', damage=32097},
-	-- {min=256, batch=64, label='Biowareprocessor Assembly (UV)', name='gregtech:gt.metaitem.03', damage=32098},
-	-- {min=256, batch=64, label='Bioware Supercomputer (UHV)', name='gregtech:gt.metaitem.03', damage=32099},
-	-- {min=256, batch=64, label='Bio Mainframe (UEV)', name='gregtech:gt.metaitem.03', damage=32120},
-
-	-- {min=256, batch=64, label='Optical Processor (UV)', name='gregtech:gt.metaitem.03', damage=32154},
-	-- {min=256, batch=64, label='Optical Assembly (UHV)', name='gregtech:gt.metaitem.03', damage=32155},
-	-- {min=256, batch=64, label='Optical Computer (UEV)', name='gregtech:gt.metaitem.03', damage=32156},
-	-- {min=256, batch=64, label='Optical Mainframe (UIV)', name='gregtech:gt.metaitem.03', damage=32157},
-
-	-- {min=256, batch=64, label='Nano Circuit (UIV)', name='dreamcraft:item.NanoCircuit', damage=0},
-	-- {min=256, batch=64, label='Pico Circuit (UMV)', name='dreamcraft:item.PikoCircuit', damage=0},
-	-- {min=256, batch=64, label='Quantum Circuit (UXV)', name='dreamcraft:item.QuantumCircuit', damage=0},
-
-	-- ======================= WAFERS =========================
-	-- {min=1024, batch=256, label='Wafer', name='gregtech:gt.metaitem.03', damage=32033},
-	-- {min=1024, batch=256, label='Phosphorous Doped Wafer', name='gregtech:gt.metaitem.03', damage=32034},
-	-- {min=1024, batch=256, label='Naquadah Doped Wafer', name='gregtech:gt.metaitem.03', damage=32035},
-	-- {min=1024, batch=256, label='Europium Doped Wafer', name='gregtech:gt.metaitem.03', damage=32151},
-	-- {min=1024, batch=256, label='Americium Doped Wafer', name='gregtech:gt.metaitem.03', damage=32153},
-
-	-- {min=512, batch=128, label='PIC Wafer', name='gregtech:gt.metaitem.03', damage=32050},
-	-- {min=512, batch=128, label='HPIC Wafer', name='gregtech:gt.metaitem.03', damage=32052},
-	-- {min=512, batch=128, label='UHPIC Wafer', name='gregtech:gt.metaitem.03', damage=32058},
-	-- {min=256, batch=128, label='NPIC Wafer', name='gregtech:gt.metaitem.03', damage=32160},
-	-- {min=256, batch=128, label='PPIC Wafer', name='gregtech:gt.metaitem.03', damage=32162},
-	-- {min=256, batch=128, label='QPIC Wafer', name='gregtech:gt.metaitem.03', damage=32164},
 
 	-- ==================== OPEN COMPUTERS ====================
 	-- {min=64, batch=16, label='Cable', name='OpenComputers:cable', damage=0},
